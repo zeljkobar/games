@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #0c062e;
+}
+
+.container {
+  width: 70%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  transition: 0.3 ease;
+}
+
+.bars, header .topBar {
+  padding: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #9190a5;
+}
+.bars a, header .topBar a {
+  color: #9190a5;
+  margin-left: 10px;
+}
+.bars a:hover, header .topBar a:hover {
+  color: #b41aab;
+}
+
+.liste, header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.liste li, header nav ul li {
+  list-style: none;
+}
+.liste li a, header nav ul li a {
+  color: #fff;
+  margin-left: 50px;
+}
+.liste li a:hover, header nav ul li a:hover {
+  color: #b41aab;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.logo span {
+  color: #b41aab;
+  font-style: italic;
+  text-shadow: 0 0 5px #fff;
+}
+.logo:hover {
+  color: #b41aab;
+}
+
+/*******************
+header
+********************/
+header {
+  background-image: linear-gradient(to right, rgba(180, 26, 171, 0.7), rgba(12, 6, 46, 0.7)), url(../img/header.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  border-bottom: 3px solid #b41aab;
+}
+header nav {
+  background: #081624;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px #b41aab;
+}
+header .uvp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 80vh;
+}
+header .uvp h1 {
+  color: #fff;
+  font-size: 10rem;
+}
+header .uvp p {
+  color: #9190a5;
+  font-size: 1.5rem;
+  text-align: center;
+}
+header .uvp button {
+  padding: 15px 30px;
+  background: #fff;
+  color: #501755;
+  box-shadow: 10px 10px #b41aab;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.8;
+  font-style: italic;
+  margin-top: 30px;
+}
+header .uvp button:hover {
+  box-shadow: 10px 10px #501755;
+  cursor: pointer;
+  transition: 0.3 ease;
+}
+
+/*# sourceMappingURL=style.css.map */

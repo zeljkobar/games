@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+$fontFamily: 'Roboto',
+sans-serif;
+$black:#081624;
+$darkBlue:#0c062e;
+$pink:#501755;
+$violet:#2d1854;
+$accents:#b41aab;
+$lightGray:#9190a5;
+$white:#fff;
+$fontSize: 16px;
+$transition: 0.3 ease;
+$padding:80px 0;
+@mixin bgImg ($bg-position,
+$bg-size,
+$bg-repeat,
+$height) {
+    background-position: $bg-position;
+    background-size: $bg-size;
+    background-repeat: $bg-repeat;
+    height: $height;
+}
+
+@mixin flex($justify,
+$align) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin btn {
+    padding: 15px 30px;
+    background: $white;
+    color: $pink;
+    box-shadow: 10px 10px $accents;
+    border: none;
+    text-transform: uppercase;
+    font-size: .8;
+    font-style: italic;
+    margin-top: 30px;
+    &:hover {
+        box-shadow: 10px 10px $pink;
+        cursor: pointer;
+        transition: $transition;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    line-height: 1.7;
+    color: $darkBlue;
+}
+
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        transition: $transition;
+    }
+}
+
+.bars {
+    padding: 20px 0;
+    @include flex(flex-end,
+    center);
+    color: $lightGray;
+    a {
+        color: $lightGray;
+        margin-left: 10px;
+        &:hover {
+            color: $accents;
+        }
+    }
+}
+
+.liste {
+    @include flex(space-between,
+    center);
+    li {
+        list-style: none;
+        a {
+            color: $white;
+            margin-left: 50px;
+            &:hover {
+                color: $accents;
+            }
+        }
+    }
+}
+
+.logo {
+    color: $white;
+    font-size: 1.5rem;
+    font-weight: 900;
+    span {
+        color: $accents;
+        font-style: italic;
+        text-shadow: 0 0 5px $white;
+    }
+    &:hover {
+        color: $accents;
+    }
+}
+
+
+/*******************
+header
+********************/
+
+header {
+    background-image: linear-gradient(to right, rgba($accents, .7), rgba($darkBlue, .7)), url(../img/header.jpg);
+    @include bgImg(center,
+    cover,
+    no-repeat,
+    100vh);
+    border-bottom: 3px solid $accents;
+    .topBar {
+        @extend .bars;
+    }
+    nav {
+        background: $black;
+        padding: 20px;
+        @include flex(space-between,
+        center);
+        box-shadow: 0 0 10px $accents;
+        ul {
+            @extend .liste;
+        }
+    }
+    .uvp {
+        @include flex(center,
+        center);
+        flex-direction: column;
+        height: 80vh;
+        h1 {
+            color: $white;
+            font-size: 10rem;
+        }
+        p {
+            color: $lightGray;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+        button {
+            @include btn;
+        }
+    }
+}
