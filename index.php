@@ -129,6 +129,14 @@
     </div>
 </section>
 
+<!-- subscribe-->
+
+<section class="subscribe">
+    <h2>Subscribe to our newslatter</h2>
+    <input type="email" placeholder="Enter email">
+    <input type="submit" value="Send">
+</section>
+
 </body>
 
 </html>

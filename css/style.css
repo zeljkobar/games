@@ -258,4 +258,44 @@ news
   transition: 0.3 ease;
 }
 
+/*******************
+subscribe
+********************/
+.subscribe {
+  padding: 80px 0;
+  text-align: center;
+  background: #9190a5;
+}
+.subscribe h2 {
+  font-size: 3rem;
+  color: #0c062e;
+}
+.subscribe input[type=email] {
+  padding: 13px;
+  width: 400px;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid #2d1854;
+  margin-right: 30px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.subscribe input[type=submit] {
+  padding: 15px 30px;
+  background: #fff;
+  color: #501755;
+  box-shadow: 10px 10px #b41aab;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.8;
+  font-style: italic;
+  margin-top: 30px;
+}
+.subscribe input[type=submit]:hover {
+  box-shadow: 10px 10px #501755;
+  cursor: pointer;
+  transition: 0.3 ease;
+}
+
 /*# sourceMappingURL=style.css.map */

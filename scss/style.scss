@@ -285,3 +285,32 @@ news
         }
     }
 }
+
+
+/*******************
+subscribe
+********************/
+
+.subscribe {
+    padding: $padding;
+    text-align: center;
+    background: $lightGray;
+    h2 {
+        font-size: 3rem;
+        color: $darkBlue;
+    }
+    input[type="email"] {
+        padding: 13px;
+        width: 400px;
+        background: transparent;
+        border: none;
+        border-bottom: 3px solid $violet;
+        margin-right: 30px;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        font-style: italic;
+    }
+    input[type="submit"] {
+        @include btn;
+    }
+}
