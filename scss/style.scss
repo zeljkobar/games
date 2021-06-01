@@ -201,3 +201,87 @@ reviews
         }
     }
 }
+
+
+/*******************
+news
+********************/
+
+.news {
+    padding: $padding;
+    background: linear-gradient(45deg, $pink, $violet);
+    .container {
+        @include flex(space-between,
+        flex-start);
+        flex-wrap: wrap;
+        article {
+            flex: 0 0 70%;
+            h2 {
+                font-size: 3rem;
+                font-style: italic;
+                color: $white;
+                margin-bottom: 30px;
+            }
+            .posts {
+                @include flex(space-between,
+                center);
+                flex-wrap: wrap;
+                margin-bottom: 30px;
+                .featured-image {
+                    flex: 0 0 38%;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .text {
+                    flex: 0 0 58%;
+                    span {
+                        color: $accents;
+                    }
+                    h3 {
+                        font-size: 2rem;
+                    }
+                    p {
+                        color: $lightGray;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        aside {
+            flex: 0 0 27%;
+            .widget {
+                padding: 30px;
+                background: $pink;
+                h3 {
+                    font-size: 2rem;
+                }
+                ul {
+                    list-style: none;
+                    li {
+                        line-height: 2;
+                        a {
+                            @extend .links;
+                        }
+                    }
+                }
+                div {
+                    background: $lightGray;
+                    text-align: center;
+                    padding: 20px;
+                    color: $darkBlue;
+                    img {
+                        width: 100%;
+                    }
+                    h2 {
+                        font-size: 2rem;
+                        text-shadow: 0 0 5px $accents;
+                    }
+                    button {
+                        @include btn;
+                    }
+                }
+            }
+        }
+    }
+}
