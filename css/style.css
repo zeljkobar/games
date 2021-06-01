@@ -9,7 +9,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.7;
-  color: #0c062e;
+  color: #fff;
 }
 
 .container {
@@ -69,6 +69,18 @@ a:hover {
   color: #b41aab;
 }
 
+.links {
+  color: #fff;
+  text-transform: uppercase;
+  font-style: italic;
+}
+.links i {
+  color: #b41aab;
+}
+.links:hover {
+  color: #b41aab;
+}
+
 /*******************
 header
 ********************/
@@ -119,6 +131,37 @@ header .uvp button:hover {
   box-shadow: 10px 10px #501755;
   cursor: pointer;
   transition: 0.3 ease;
+}
+
+/*******************
+reviews
+********************/
+.reviews {
+  background: #0c062e;
+  padding: 80px 0;
+}
+.reviews .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.reviews .container article {
+  flex: 0 0 30%;
+}
+.reviews .container article h4 {
+  color: #fff;
+}
+.reviews .container article h4 span {
+  color: #b41aab;
+}
+.reviews .container article h2 {
+  color: #fff;
+  font-size: 2rem;
+}
+.reviews .container article p {
+  color: #9190a5;
+  padding: 30px 0;
 }
 
 /*# sourceMappingURL=style.css.map */

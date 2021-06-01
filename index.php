@@ -39,6 +39,33 @@
         </div>
 </header>
 
+<!-- reviews -->
+
+<section class="reviews">
+    <div class="container">
+        <article>
+            <h4>06.10.2020 / <span>Games</span></h4>
+            <h2>The best online game</h2>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit sequi fugiat voluptatem doloribus molestias, rem enim consectetur soluta modi eligendi laboriosam ad est quas nobis dolore aliquam illum perferendis esse.</p>
+            <a href="" class="links">Read more&nbsp;<i class="fas fa-angle-double-right"></i></a>
+        </article>
+        <article>
+            <h4>06.10.2020 / <span>Xbox</span></h4>
+            <h2>Top 5 games in octobar</h2>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit sequi fugiat voluptatem doloribus molestias, rem enim consectetur soluta modi eligendi laboriosam ad est quas nobis dolore aliquam illum perferendis esse.</p>
+            <a href="" class="links">Read more&nbsp;<i class="fas fa-angle-double-right"></i></a>
+        </article>
+        <article>
+            <h4>06.10.2020 / <span>Promo code</span></h4>
+            <h2>Get this game at a promo price</h2>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit sequi fugiat voluptatem doloribus molestias, rem enim consectetur soluta modi eligendi laboriosam ad est quas nobis dolore aliquam illum perferendis esse.</p>
+            <a href="" class="links">Read more&nbsp;<i class="fas fa-angle-double-right"></i></a>
+        </article>
+    </div>
+
+</section>
+
+
 </body>
 
 </html>
