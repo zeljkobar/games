@@ -61,6 +61,9 @@ body {
 .container {
     width: 70%;
     margin: auto;
+    @media(max-width: 768px) {
+        width: 90%;
+    }
 }
 
 a {
@@ -75,6 +78,9 @@ a {
     @include flex(flex-end,
     center);
     color: $lightGray;
+    @media(max-width: 768px) {
+        @include flex(center, center);
+    }
     a {
         color: $lightGray;
         margin-left: 10px;
@@ -92,6 +98,9 @@ a {
         a {
             color: $white;
             margin-left: 50px;
+            @media(max-width: 768px) {
+                margin: 10px;
+            }
             &:hover {
                 color: $accents;
             }
@@ -146,6 +155,9 @@ header {
         @include flex(space-between,
         center);
         box-shadow: 0 0 10px $accents;
+        @media(max-width: 768px) {
+            flex-direction: column;
+        }
         ul {
             @extend .liste;
         }
@@ -158,6 +170,9 @@ header {
         h1 {
             color: $white;
             font-size: 10rem;
+            @media(max-width: 768px) {
+                font-size: 5rem;
+            }
         }
         p {
             color: $lightGray;
@@ -184,6 +199,9 @@ reviews
         flex-wrap: wrap;
         article {
             flex: 0 0 30%;
+            @media(max-width: 768px) {
+                flex: 0 0 100%;
+            }
             h4 {
                 color: $white;
                 span {
@@ -216,6 +234,9 @@ news
         flex-wrap: wrap;
         article {
             flex: 0 0 70%;
+            @media(max-width: 768px) {
+                flex: 0 0 100%;
+            }
             h2 {
                 font-size: 3rem;
                 font-style: italic;
@@ -229,12 +250,18 @@ news
                 margin-bottom: 30px;
                 .featured-image {
                     flex: 0 0 38%;
+                    @media(max-width: 768px) {
+                        flex: 0 0 100%;
+                    }
                     img {
                         width: 100%;
                     }
                 }
                 .text {
                     flex: 0 0 58%;
+                    @media(max-width: 768px) {
+                        flex: 0 0 100%;
+                    }
                     span {
                         color: $accents;
                     }
@@ -250,6 +277,9 @@ news
         }
         aside {
             flex: 0 0 27%;
+            @media(max-width: 768px) {
+                flex: 0 0 100%;
+            }
             .widget {
                 padding: 30px;
                 background: $pink;
@@ -295,9 +325,16 @@ subscribe
     padding: $padding;
     text-align: center;
     background: $lightGray;
+    @media(max-width: 768px) {
+        padding: 30px;
+    }
     h2 {
         font-size: 3rem;
         color: $darkBlue;
+        @media(max-width: 768px) {
+            font-size: 2rem;
+            line-height: 30px;
+        }
     }
     input[type="email"] {
         padding: 13px;
@@ -309,9 +346,15 @@ subscribe
         font-size: 1.2rem;
         text-transform: uppercase;
         font-style: italic;
+        @media(max-width: 768px) {
+            width: 100%;
+        }
     }
     input[type="submit"] {
         @include btn;
+        @media(max-width: 768px) {
+            width: 100%;
+        }
     }
 }
 
@@ -329,6 +372,9 @@ footer {
         width: 30%;
         margin: auto;
         @extend .liste;
+        @media(max-width: 768px) {
+            width: 90%;
+        }
     }
     p {
         @extend .bars;
