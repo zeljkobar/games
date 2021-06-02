@@ -129,7 +129,7 @@
     </div>
 </section>
 
-<!-- subscribe-->
+<!-- subscribe -->
 
 <section class="subscribe">
     <h2>Subscribe to our newslatter</h2>
@@ -137,6 +137,25 @@
     <input type="submit" value="Send">
 </section>
 
+<!-- footer -->
+
+<footer>
+
+    <a href=" " class="logo">Gaming <span>Theme</span></a> 
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">Games</a></li>
+        <li><a href="">Reviews</a></li>
+        <li><a href="">News</a></li>
+        <li><a href="">Contact</a></li>
+    </ul>
+    <p>Folow us: 
+        <a href=""><i class="fab fa-pinterest"></i></a>
+        <a href=""><i class="fab fa-facebook"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-dribbble"></i></a>
+    </p>
+</footer>
 </body>
 
 </html>

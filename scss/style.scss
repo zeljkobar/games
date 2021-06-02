@@ -314,3 +314,25 @@ subscribe
         @include btn;
     }
 }
+
+
+/*******************
+footer
+********************/
+
+footer {
+    background: linear-gradient(to right, $violet, $darkBlue);
+    padding: $padding;
+    text-align: center;
+    ul {
+        padding-top: 20px;
+        width: 30%;
+        margin: auto;
+        @extend .liste;
+    }
+    p {
+        @extend .bars;
+        @include flex(center,
+        center);
+    }
+}

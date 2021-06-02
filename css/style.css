@@ -24,34 +24,34 @@ a:hover {
   transition: 0.3 ease;
 }
 
-.bars, header .topBar {
+.bars, footer p, header .topBar {
   padding: 20px 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   color: #9190a5;
 }
-.bars a, header .topBar a {
+.bars a, footer p a, header .topBar a {
   color: #9190a5;
   margin-left: 10px;
 }
-.bars a:hover, header .topBar a:hover {
+.bars a:hover, footer p a:hover, header .topBar a:hover {
   color: #b41aab;
 }
 
-.liste, header nav ul {
+.liste, footer ul, header nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.liste li, header nav ul li {
+.liste li, footer ul li, header nav ul li {
   list-style: none;
 }
-.liste li a, header nav ul li a {
+.liste li a, footer ul li a, header nav ul li a {
   color: #fff;
   margin-left: 50px;
 }
-.liste li a:hover, header nav ul li a:hover {
+.liste li a:hover, footer ul li a:hover, header nav ul li a:hover {
   color: #b41aab;
 }
 
@@ -296,6 +296,25 @@ subscribe
   box-shadow: 10px 10px #501755;
   cursor: pointer;
   transition: 0.3 ease;
+}
+
+/*******************
+footer
+********************/
+footer {
+  background: linear-gradient(to right, #2d1854, #0c062e);
+  padding: 80px 0;
+  text-align: center;
+}
+footer ul {
+  padding-top: 20px;
+  width: 30%;
+  margin: auto;
+}
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
